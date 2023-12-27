@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- details for veiwport-->
+    <title>MYJIO.COM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      * {
+       box-sizing: border-box;
+       font-family: Roboto, Arial;
+}
+/*STYLE FOR TITLE*/
+.title {
+  background-color: rgb(12, 12, 234); 
+  color: white;
+  margin-left: 10PX;
+  padding: 9px 14px 9px 14px;
+  width: fit-content;
+  border-radius: 15px;
+}                             
+
+.title:hover {                /* HOVER SYTLE*/
+  background-color:  #e20d0d;
+}
+
+.columns {            /* STYLE FOR EACH COLUMN */
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {                /*STYLE FOR EACH LISTED PRICE DETAILS */
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 200px 0 rgba(0,0,0,0.2);
+}
+
+.price .header {   /*STYLE FOR PRICE DETAILS HEADER*/
+  background-color: rgb(12, 12, 234);
+  color: white;
+  font-size: 25px;
+  border-radius: 10px;
+}
+
+.price li {           /*STYLE FOR LIST ELEMENTS */
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {                /*STYLE FOR PAY BUTTON*/
+  background-color: #e20d0d;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+.button:hover {
+    background-color: #ea6767; 
+    transition: 0.3s;
+  }
+  
+.button:active {
+    text-decoration: underline;
+}
+@media only screen and (max-width: 600px) {        /*TO ADJUST THE COLUMNS ACCORDING TO PAGE SIZE*/
+  .columns {
+    width: 100%;
+  }
+}
+</style>
+</head>
+  <body>
+    <div><p class="title" >JIO RECOMMENDED PLANS</p></div>  <!--COLUMN 1-->
+    <div class="columns">
+      <ul class="price">
+        <li class="header">Basic</li>
+        <li class="grey"> &#x20b9; 299 / MONTH</li>
+        <li>28 DAYS VALIDITY</li>
+        <li>2GB/DAY</li>
+        <li>UNLIMITED 5G &VOICE</li>
+        <li>JIO APPS & OTHER SUBSCRIPTIONS</li>
+        <li class="grey"><a href="https://www.jio.com/selfcare/plans/mobility/prepaid-plans-home/" target="_blank" class="button">PAY NOW</a></li>
+      </ul>
+    </div>
+    <!--END OF COLUMN 1-->
+    <div class="columns">         <!--COLUMN 2-->
+      <ul class="price">
+        <li class="header">Pro</li>
+        <li class="grey"> &#x20b9; 349 / MONTH</li>
+        <li>30 DAYS VALIDITY</li>
+        <li>2.5 GB/DAY</li>
+        <li>UNLIMITED 5G &VOICE</li>
+        <li>JIO APPS & OTHER SUBSCRIPTIONS</li>
+        <li class="grey"><a href="https://www.jio.com/selfcare/plans/mobility/prepaid-plans-home/" target="_blank" class="button">PAY NOW</a></li>
+      </ul>
+    </div>
+    <!--END OF COLUMN 2-->
+    <div class="columns">         <!-- COLUMN 3-->
+      <ul class="price">
+        <li class="header">BEST</li>
+        <li class="grey"> &#x20b9; 399 / MONTH</li>
+        <li>28 DAYS VALIDITY</li>
+        <li>3GB /DAY</li>
+        <li>UNLIMITED 5G & VOICE</li>
+        <li>JIO APPS & OTHER SUBSCRIPTION</li>
+        <li class="grey"><a href="https://www.jio.com/selfcare/plans/mobility/prepaid-plans-home/" target="_blank" class="button">PAY NOW</a></li>
+      </ul>
+    </div>
+    <!--END OF COLUMN 3-->
+  </body>
+</html>
